@@ -1,0 +1,51 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+    width:100%;
+
+}
+
+article {
+    width:50em;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: 3s;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+footer{
+    width: 50em;
+    display: block;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+.fa-facebook-square,.fa-twitter-square {
+    color: blue;
+}
+
+.fa-google-plus-square {
+    color: red;
+}
