@@ -17,6 +17,14 @@ h1,h2{
     display: block;
 }
 
+h1{
+    text-align: center;
+}
+h2{
+    text-align: left;
+    padding-left:2em;
+}
+
 .second-header{
     display: block;
     position:relative;
@@ -72,12 +80,6 @@ figcaption{
         width:50em;
         margin-left: auto;
         margin-right: auto;
-    }
-    h2 {
-        text-align:left;
-    }
-    .second-header {
-        padding-left: 2em;
     }
 }
 
