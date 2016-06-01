@@ -1,51 +1,83 @@
-/*
-
-Your styles go here!
-
-Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
-
-I've left some boilerplate below for you.
-
-*/
-
 body {
     width:100%;
-
 }
 
-article {
+article,footer,section{
     width:50em;
     margin-right: auto;
     margin-left:  auto;
+    display:flex;
+    flex-wrap: wrap;
 }
 
-h1 {
-    text-align: center;
+h1,h2{
+    text-align:center;
     text-transform: uppercase;
     transition-duration: 3s;
     display: block;
 }
 
-img {
-    max-width: 100%;
+.second-header{
+    display: block;
+    position:relative;
+    width: 100%;
 
 }
 
-footer{
-    width: 50em;
-    display: block;
-    margin-right: auto;
-    margin-left:  auto;
+img {
+    max-width: 100%;
+    transition: width-2s;
+}
+
+figcaption{
+    text-align: center;
+    color: red;
 }
 
 .fa-facebook-square,.fa-twitter-square {
     color: blue;
+    padding: 1em;
 }
 
 .fa-google-plus-square {
     color: red;
+    padding: 1em;
 }
+/*Media queries */
+@media screen and (max-width:550px){
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+
+    }
+    figure,footer,.second-header,.banner{
+        width:100%;
+    }
+
+    .second-header{
+        position:relative;
+    }
+}
+
+@media screen and (min-width:799px) {
+    article,section,footer,.second-header{
+        width:100%;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+     article,section,footer,hr,.banner,.second-header,.github-link{
+        width:50em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        text-align:left;
+    }
+    .second-header {
+        padding-left: 2em;
+    }
+}
+
